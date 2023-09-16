@@ -1,0 +1,163 @@
+/** Reset v2.0 **/
+@import url('reset.css');
+
+/** Media Print **/
+@import url('print.css');
+
+/** Individual Styles **/
+@import url('all.css');
+
+/** Custom Fonts **/
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+/** Fonts Properties **/
+h1,h2,h3,h4,h5,h6,header,nav { 
+	font-family: 'Fjalla One', sans-serif; 
+}
+
+header,nav { 
+	text-transform: uppercase; 
+}
+
+nav { 
+	font-size: 16px; 
+}
+
+#center{
+	text-align: center;
+}
+
+#titulo { 
+	font-size: 40px;
+}
+
+#inicio p { 
+	font-size: 20px; 
+}
+
+#inicio p a.size {
+	font-size: 20px;
+}
+
+.btn p a { 
+	font-size: 30px; 
+}
+
+section { 
+	font-family: 'Arial', sans-serif; 
+	font-size: 20px;  
+}
+
+footer { 
+	font-family: 'Franklin Gothic Medium', sans-serif; 
+	font-size: 20px 
+}
+
+/** General Styles **/
+body { 
+	background: linear-gradient(to bottom, #32b4ff 0%, #0974b2 100%); 
+}
+
+.main { 
+	margin: 0px auto; 
+	margin-top: 95px; 
+	max-width: 950px; 
+	z-index: 1; 
+	filter: drop-shadow(1px 1px 3px #000);
+}
+
+.contenedor { 
+	overflow: hidden; 
+	font-weight: normal; 
+}
+
+.bold{
+	font-weight: bold;
+}
+
+/** Links Styles **/
+a { 
+	text-decoration: none; 
+	color: #000; 
+}
+
+a:hover { 
+	color: #0974b2;
+	text-decoration: underline; 
+}
+
+/** Custom Selection **/
+*::selection {
+	color: #000;
+	background: red;
+}
+
+/** Custom Scrollbar **/
+body::-webkit-scrollbar { 
+	width: 7px; 
+	background: #eee; 
+	transition: all;
+	transition-duration: 350ms;
+}
+
+body::-webkit-scrollbar:hover {
+	width: 15px;
+}
+
+body::-webkit-scrollbar-thumb { 
+	background: #242424; 
+	min-height: 60px; 
+	border-radius: 10px; 
+	transition: all;
+	transition-duration: 350ms;
+}
+
+body::-webkit-scrollbar-thumb:hover { 
+	background: #32b4ff;
+	border-radius: 10px; 
+}
+
+/** Normalize Buttons **/
+.btn:focus { 
+	outline: 0; 
+}
+
+.btn::-moz-focus-inner { 
+	padding: 0px; 
+	border: 0px; 
+}
+
+.btn { 
+	font-weight: bold; 
+	letter-spacing: 0.93px; 
+}
+
+/** Progress Bar **/
+.pace { 
+	pointer-events: none; 
+	user-select: none; 
+}
+
+.pace-inactive { 
+	display: none; 
+}
+
+.pace .pace-progress {
+	z-index:2000;
+	background: #32b4ff;
+	position: fixed;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 3px;
+}
+
+/** Remove Watermark **/
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { 
+	display: none; 
+}
+.camera_img {
+	max-width: 300px;
+	height: auto;
+}
